@@ -6,10 +6,10 @@
 This paper studies semi-supervised video object segmentation through boosting intra-frame interaction. Recent memory network-based methods focus on exploiting inter-frame temporal reference while paying little attention to intra-frame spatial dependency. Specifically, these segmentation model tends to be susceptible to interference from unrelated nontarget objects in a certain frame. To this end, we propose Global Spectral Filter Memory network (GSFM), which improves intra-frame interaction through learning long-term spatial dependencies in the spectral domain. The key components of GSFM is 2D (inverse) discrete Fourier transform for spatial information mixing. Besides, we empirically find low frequency feature should be enhanced in encoder (backbone) while high frequency for decoder (segmentation head). We attribute this to semantic information extracting role for encoder and fine-grained details highlighting role for decoder. Thus, Low (High)-Frequency Module is proposed to fit this circumstance.
 
 ## Framework
-<img src="docs/framework.png" width="800px"/> 
+<img src="docs/framework.png" width="95%"/> 
 
 ## Demo
-<img src="docs/demo.gif" width="45%"/> 
+<img src="docs/demo.gif" width="45%"/> <img src="docs/demo2.gif" width="45%"/>
 
 ## Results
 | Dataset | Split |  J&F | J | F |
@@ -45,16 +45,16 @@ Note that in our project we only use the static datasets, DAVIS, and YouTubeVOS.
 
 ## Code Structure
 ```xml
-├── data: here are train and test datasets.
+├── data/: here are train and test datasets.
 │   ├── static
 │   ├── DAVIS
 │   ├── YouTube
 │   ├── YouTube2018
-├── datasets: transform and dataloader for train and test datasets
-├── model: here are the code of the network and training engine(model.py)
-├── saves: here are the checkpoint obtained from training
-├── scripts: some function used to process dataset
-├── util: here are the config(hyper_para.py) and some utils
+├── datasets/: transform and dataloader for train and test datasets
+├── model/: here are the code of the network and training engine(model.py)
+├── saves/: here are the checkpoint obtained from training
+├── scripts/: some function used to process dataset
+├── util/: here are the config(hyper_para.py) and some utils
 ├── inference_memory_bank.py: the memory bank used in test
 ├── train.py
 ├── inference_core.py: test engine for DAVIS
