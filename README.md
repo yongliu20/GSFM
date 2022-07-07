@@ -9,7 +9,7 @@ This paper studies semi-supervised video object segmentation through boosting in
 <img src="docs/framework.png" width="800px"/> 
 
 ## Demo
-<img src="docs/demo.gif" width="800px"/> 
+<img src="docs/demo.gif" width="45%"/> 
 
 ## Results
 | Dataset | Split |  J&F | J | F |
