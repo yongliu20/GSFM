@@ -95,7 +95,7 @@ Run the following file to perform inference on the corresponding dataset.
 
 
 ## Evaluation
-For the evaluation metric on DAVIS 2016/2017 val set, we refer to the repository [DAVIS_val](https://github.com/davisvideochallenge/davis-2017).
+For the evaluation metric on DAVIS 2016/2017 val set, we refer to the repository [DAVIS_val](https://github.com/workforai/DAVIS-evaluation).
 For DAVIS 2017 test-dev set, you can get the metric results by submitting masks to the Codalab website [DAVIS_test](https://competitions.codalab.org/competitions/20516)
 For YouTube2019 val set, please submit your results to [YouTube19](https://competitions.codalab.org/competitions/20127)
 For YouTube2018 val set, please submit to [YouTube18](https://competitions.codalab.org/competitions/19544)
