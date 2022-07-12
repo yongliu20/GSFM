@@ -34,12 +34,15 @@ class FeatureFusionBlock(nn.Module):
         super().__init__()
 
         self.block1 = ResBlock(indim, outdim)
+        self.attention = cbam.CBAM(outdim)
         self.block2 = ResBlock(outdim, outdim)
+
 
     def forward(self, x, f16):
         x = torch.cat([x, f16], 1)
         x = self.block1(x)
-        x = self.block2(x)
+        r = self.attention(x)
+        x = self.block2(x + r)
 
         return x
 
