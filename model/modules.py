@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from torchvision import models
 
 from model import mod_resnet
+from model import cbam
 
 
 class ResBlock(nn.Module):
