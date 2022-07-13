@@ -155,7 +155,6 @@ class STCN(nn.Module):
             mr = self.memory.readout(affinity, mv16, qv16)
             logits, boundary = self.decoder(mr, qf8, qf4)
             prob = torch.sigmoid(logits)
-            boundary = torch.sigmoid(boundary)
         else:
             mr_0 = self.memory.readout(affinity, mv16[:,0], qv16)
             mr_1 = self.memory.readout(affinity, mv16[:,1], qv16)
@@ -167,7 +166,6 @@ class STCN(nn.Module):
 
 
             prob = torch.sigmoid(logits)
-            boundary = torch.sigmoid(boundary)
             prob = prob * selector.unsqueeze(2).unsqueeze(2)
             boundary = boundary * selector.unsqueeze(2).unsqueeze(2)
 

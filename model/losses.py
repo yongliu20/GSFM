@@ -129,7 +129,7 @@ class LossComputer:
 
 
 
-                losses['loss_%d'%i] = losses['loss_%d'%i] + loss1 / b + 0.25 * loss2 / b
+                losses['loss_%d'%i] = losses['loss_%d'%i] + loss1 / b + 0.05 * loss2 / b
                 losses['p'] += p / b / (s-1)
 
 

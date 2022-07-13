@@ -54,7 +54,7 @@ class HyperParameters():
         # Assign default if not given
         if self.args['stage'] == 0:
             # Static image pretraining
-            self.args['lr'] = none_or_default(self.args['lr'], 6e-5)
+            self.args['lr'] = none_or_default(self.args['lr'], 4e-5)
             self.args['batch_size'] = none_or_default(self.args['batch_size'], 16)
             self.args['iterations'] = none_or_default(self.args['iterations'], 40000)
             self.args['steps'] = none_or_default(self.args['steps'], [20000])
@@ -83,8 +83,8 @@ class HyperParameters():
             # 150K main training for after static image pretraining
             self.args['lr'] = none_or_default(self.args['lr'], 4e-5)
             self.args['batch_size'] = none_or_default(self.args['batch_size'], 8)
-            self.args['iterations'] = none_or_default(self.args['iterations'], 25000)
-            self.args['steps'] = none_or_default(self.args['steps'], [20000])
+            self.args['iterations'] = none_or_default(self.args['iterations'], 30000)
+            self.args['steps'] = none_or_default(self.args['steps'], [25000])
             self.args['start_warm'] = none_or_default(self.args['start_warm'], 3000)
             self.args['end_warm'] = none_or_default(self.args['end_warm'], 15000)
             self.args['single_object'] = False
