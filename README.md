@@ -11,7 +11,7 @@ This paper studies semi-supervised video object segmentation through boosting in
 ## Demo
 <img src="docs/demo.gif" width="45%"/> <img src="docs/demo2.gif" width="45%"/>
 
-## Results
+## Results (Trained Without COCO or BL30K)
 | Dataset | Split |  J&F | J | F |
 | --- | :---: | :--:|:--:|:---:|
 | DAVIS 2016 | val | 91.4 | 90.1 | 92.7 |
