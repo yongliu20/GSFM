@@ -14,13 +14,13 @@ This paper studies semi-supervised video object segmentation through boosting in
 ## Results
 | Dataset | Split |  J&F | J | F |
 | --- | :---: | :--:|:--:|:---:|
-| DAVIS 2016 | val | 91.5 | 90.5 | 92.5 |
-| DAVIS 2017 | val | 85.3 | 81.9 | 88.7 |
-| DAVIS 2017 | test-dev | 77.8 | 74.3 | 81.2 |
+| DAVIS 2016 | val | 91.4 | 90.1 | 92.7 |
+| DAVIS 2017 | val | 86.2 | 83.1 | 89.3 |
+| DAVIS 2017 | test-dev | 77.5 | 74.0 | 80.9 |
 
 | Dataset | Split | Overall Score | J-Seen | F-Seen | J-Unseen | F-Unseen
 | --- | --- | :--:|:--:|:---:|:---:|:---:|
-| YouTubeVOS 18 | validation | 83.8 | 82.8 | 87.6 | 78.3 | 86.3 |
+| YouTubeVOS 18 | validation | 83.8 | 82.8 | 87.5 | 78.3 | 86.5 |
 <!-- | YouTubeVOS 19 | validation | 84.2 | 82.6 | 87.0 | 79.4 | 87.7 | -->
 
 ## Requirements
